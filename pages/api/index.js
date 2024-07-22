@@ -1,4 +1,12 @@
 
 export default function handler(req, res) {
-  res.status(200).json({ name: "John Doe" });
+  switch (req.method) {
+    case 'GET':
+      res.status(200).json({ message: "Wellcome to todo app backend" });
+      break;
+  
+    default:
+      res.status(200).json({ message: "Wellcome to todo app backend" });
+      break;
+  }
 }

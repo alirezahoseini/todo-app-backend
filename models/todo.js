@@ -7,7 +7,7 @@ const schema = mongoose.Schema({
         maxLength: 100,
         required: true
     },
-    discription:{
+    description:{
         type: String,
         minLength: 5,
         maxLength: 200,

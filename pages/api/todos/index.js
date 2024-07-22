@@ -17,7 +17,6 @@ export default async function handler(req, res) {
         try {
             const validationStatus = await validatTodo(req.body);
             if(validationStatus !== true){
-                console.log('validation falsed');
                 return res.status(422).json(validationStatus);        
             }else{
                 const {description, title} = req.body;
